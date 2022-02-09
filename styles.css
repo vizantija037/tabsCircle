@@ -37,7 +37,7 @@ body{
     transition: all cubic-bezier(0.91,-0.33, 0.28, 1.31) 700ms;
 }
 .button.active {
-    background-color: rgb(18, 105, 23);
+    background-color: rgb(93, 16, 57);
     font-weight: 600;
     font-size: 20px;
 }
@@ -45,7 +45,7 @@ body{
 .button:hover {
     cursor: pointer;
     transform: rotateZ(360deg);
-    background-color: rgb(18, 105, 23);
+    background-color: rgb(146, 76, 113);
 }
 .content-container {
     position: absolute;
@@ -68,7 +68,7 @@ body{
     display: flex;
     opacity: 1;
     transform: scale(1);
-    background-color:rgb(18, 105, 23);
+    background-color:rgb(93, 16, 57);
 
 }
 
