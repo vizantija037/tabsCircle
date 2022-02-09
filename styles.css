@@ -62,7 +62,7 @@ body{
     padding: 70px;
     transition: all ease-in-out 700ms;
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(5);
 }
 .content-container.active {
     display: flex;
