@@ -4,10 +4,46 @@ body{
     background-color:rgb(20, 20, 20);
     margin: 0;
     padding: 0;
+    transition: ease-in-out all 500ms;
+}
+body.active {
+    background-color:white;
+}
+.btn {
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    height: 80px;
+    width: 80px;
+    color: black;
+    font-weight: 600;
+    z-index: 100;
+    transition: all ease-out 300ms;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.btn:hover {
+    background-color:black;
+    border: 1px solid white;
+    color:white;
+    cursor: pointer;
+}
+.btn.active {
+    background-color:black;
+    border: 1px solid white;
+    color:white;
+}
+.btn.active:hover {
+    background-color:white;;
+    border: 1px solid black;
+    color:black;
 }
 .main-container {
     display: flex;
-    width: 80%;
+    width: rgb(27, 24, 24);
     flex-direction: row;
     justify-content: left;
     align-items: center;
@@ -34,21 +70,20 @@ body{
     color: white;
     font-size: 18px;
     font-weight: 400;
-   /* transition: all cubic-bezier(0.91,-0.33, 0.28, 1.31) 700ms;*/
-   transition: all ease-in-out 0.25s;
+    transition: all ease-in-out 0.25s;
 }
 .button.active {
     background-color: rgb(93, 16, 57);
     font-weight: 600;
     font-size: 20px;
-    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 rgb(105, 105, 105);
 }
 
 .button:hover {
     cursor: pointer;
     /*transform: rotateZ(360deg);*/
     background-color: rgb(121, 34, 80);
-    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 rgb(105, 105, 105);
     transform: scale(1);
 }
 .content-container {
