@@ -1,7 +1,7 @@
 body{
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:white;
+    background-color:rgb(20, 20, 20);
     margin: 0;
     padding: 0;
 }
@@ -34,18 +34,22 @@ body{
     color: white;
     font-size: 18px;
     font-weight: 400;
-    transition: all cubic-bezier(0.91,-0.33, 0.28, 1.31) 700ms;
+   /* transition: all cubic-bezier(0.91,-0.33, 0.28, 1.31) 700ms;*/
+   transition: all ease-in-out 0.25s;
 }
 .button.active {
     background-color: rgb(93, 16, 57);
     font-weight: 600;
     font-size: 20px;
+    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
 }
 
 .button:hover {
     cursor: pointer;
-    transform: rotateZ(360deg);
-    background-color: rgb(146, 76, 113);
+    /*transform: rotateZ(360deg);*/
+    background-color: rgb(121, 34, 80);
+    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    transform: scale(1);
 }
 .content-container {
     position: absolute;
@@ -57,18 +61,19 @@ body{
     height: 500px;
     border-radius: 50%;
     flex-direction: column;
-    background-color:rgb(21, 13, 146);
+    background-color:cornflowerblue;
     color: white;
     padding: 70px;
     transition: all ease-in-out 700ms;
     opacity: 0;
-    transform: scale(5);
+    transform: scale(2);
 }
 .content-container.active {
     display: flex;
     opacity: 1;
     transform: scale(1);
     background-color:rgb(93, 16, 57);
+
 
 }
 
